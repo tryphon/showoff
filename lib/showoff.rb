@@ -310,7 +310,12 @@ class ShowOff < Sinatra::Application
 
       # PDFKit.new takes the HTML and any options for wkhtmltopdf
       # run `wkhtmltopdf --extended-help` for a full list of options
-      kit = PDFKit.new(html, :page_size => 'Letter', :orientation => 'Landscape')
+
+      File.open("/tmp/preso.html", "w") do |f|
+        f.puts html
+      end
+
+      kit = PDFKit.new(html, :page_size => 'A4', :orientation => 'Portrait')
 
       # Save the PDF to a file
       file = kit.to_file('/tmp/preso.pdf')

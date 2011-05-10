@@ -315,8 +315,8 @@ a.fg-button { float:left; }
   }
 
   .slide .center {
-    width: 600px;
-    height: 600px;
+    /* width: 600px; */
+    /* height: 600px; */
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -324,8 +324,8 @@ a.fg-button { float:left; }
 
   #preso, .slide {
       background: #fff;
-      width: 600px;
-      height: 600px;
+      /* width: 600px; */
+      /* height: 600px; */
       margin-left:auto;
       margin-right:auto;
       overflow:hidden;
@@ -334,7 +334,7 @@ a.fg-button { float:left; }
   #footer {
       background: #eee;
       padding: 2px;
-      width: 590px;
+      /* width: 590px; */
       height: 20  px;
       margin-left:auto;
       margin-right:auto;
